@@ -12,9 +12,9 @@ int main(int argc, char * args[]) {
 
     std::cout << '\n';
 
-    while (!stegCons::recivedFlags.empty()){
-        stegCons::strflag tmp = stegCons::recivedFlags.front();
-        stegCons::recivedFlags.pop();
+    while (!stegCons::receivedFlags.empty()){
+        stegCons::strflag tmp = stegCons::receivedFlags.front();
+        stegCons::receivedFlags.pop();
 
         switch (tmp.flagMethod) {
             case stegCons::Info: {

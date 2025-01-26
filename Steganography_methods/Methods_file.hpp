@@ -39,7 +39,7 @@ void stringBinToVec (const std::string &str, std::vector<int> &signVector) {
 
 /**
  * It append vector by pushing bits of hidden message in their integer representation,
- * where frist is signature, second is message length and third is message.
+ * where first is signature, second is message length and third is message.
  *
  * @param message -> string that contains user message
  * @param signature -> const string that contains signature
@@ -79,7 +79,7 @@ void clearIntVec(std::vector<int> &vec) {
  * Iterate through vector and if n element have last bit set,
  * then set n bit in value.
  *
- * @tparam T -> type that have size of vec
+ * @param T -> type that have size of vec
  * @param value -> value where bits will be set
  * @param vec -> vector of bytes
  */

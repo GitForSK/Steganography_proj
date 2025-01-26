@@ -49,7 +49,7 @@ namespace stegCons {
             {"--help", "-h", 0, Help},
     };
 
-    std::queue<strflag> recivedFlags;
+    std::queue<strflag> receivedFlags;
     std::queue<std::string> values;
 
     /**
@@ -68,17 +68,17 @@ namespace stegCons {
                   << "That flag print manual." << '\n' << '\n'
                   << "-i, --info -> Require path to image. " << '\n'
                   << "That flag print image info." << '\n' << '\n'
-                  << "-e, --encrypt -> Require path to image and message in message in\n"
+                  << "-e, --encrypt -> Require path to image and message in\n"
                      "quotation marks." << '\n'
                   << "That flag hides message in image" << '\n' << '\n'
                   << "-d, --decrypt -> Require path to image. " << '\n'
                   << "That flag reads hidden message if found." << '\n' << '\n'
-                  << "-c, --check -> Require path to image. " << '\n'
+                  << "-c, --check -> Require path to image and message that will be encrypted in image. " << '\n'
                   << "That flag check if you can hide message in image." << '\n';
     }
 
     /**
-     * Gather flags to queue recivedFlags and thier values to
+     * Gather flags to queue receivedFlags and their values to
      * queue values. Check if flags and arguments were properly
      * given, if not print error and exit program.
      *
@@ -100,7 +100,7 @@ namespace stegCons {
                                               });
 
                 if (foundFlag != flags.end()){
-                    recivedFlags.push(*foundFlag);
+                    receivedFlags.push(*foundFlag);
 
                     for (int j = 0; j < foundFlag->argCount; ++j) {
                         ++i;
