@@ -1,3 +1,0 @@
-C:/Users/Konrad/CLionProjects/PJC/projekt_steganografia/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Konrad/CLionProjects/PJC/projekt_steganografia/cmake-build-debug/CMakeFiles/projekt_steganografia.dir
-C:/Users/Konrad/CLionProjects/PJC/projekt_steganografia/cmake-build-debug/CMakeFiles/rebuild_cache.dir
