@@ -1,13 +1,15 @@
 # Project steganography
 
-This program allow you to hide message in supported images file. The supported types are not compressed TGA and BMP files. To run this program first you need to build it and then in console go to the directory where exe file exist and use name of exe file. This will show you the starting message with available flags. If you want to use one of these flags just write in console name of exe file with the flag and it's parameters. For example for decrypting the hidden message you write:
+This program allows you to hide messages in supported image files. The supported formats are uncompressed TGA and BMP files.
+To run this program, you first need to build it. Then, in the console, navigate to the directory where the executable file exists and run it by using its name. This will display the startup message along with the available flags.
+If you want to use one of these flags, enter the executable file's name in the console, followed by the flag and its parameters. For example, to decrypt a hidden message, use:
 ```
 name_of_exe_file -d "path to file"
 ```
 
 Flag list:
-1. -i, --info -> display information about file. As argument takes file path.
-2. -e, --encrypt -> hide message in file. Take path to file and message.
-3. -d, --decrypt -> read hidden message if exist. Takes path to file as argument.
-4. -c, --check -> takes path to file and message, then check if given message can be hidden in file.
-5. -h, --help -> display instruction.
+1. -i, --info → Displays information about the file. Takes the file path as an argument.
+2. -e, --encrypt → Hides a message in the file. Takes the file path and the message as arguments.
+3. -d, --decrypt → Reads a hidden message if it exists. Takes the file path as an argument.
+4. -c, --check → Takes the file path and a message, then checks if the given message can be hidden in the file.
+5. -h, --help → Displays instructions.
